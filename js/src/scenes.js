@@ -1,4 +1,4 @@
-Crafty.scene("Loading", function () {
+Crafty.scene('Loading', function () {
   Crafty.e("2D, DOM, Text")
     .attr({ w: 100, h: 20, x: Game.width()/2 - 50, y: Game.height()/2 - 30 })
     .text("Loading...")
@@ -13,24 +13,22 @@ Crafty.scene("Loading", function () {
       this.updateBarProgress(percent);
     });
 
-
   Crafty.load(Game.assets,
               function() { // when loaded
+                console.log("loaded");
                 Crafty.scene('Game'); //go to main scene
               },
               function(e) { // on progress
+                console.log("progress");
                 Crafty.trigger("LOADING_PROGRESS", e.percent);
               },
               function(e) { // on error
+                console.log("error");
               }
              );
 });
 
 Crafty.scene('Game', function() {
-  var eater = Crafty.e('2D, DOM, eater, Fourway').fourway(4);
-  var ghosty = Crafty.e('2D, DOM, ghosty');
-  var ghostier = Crafty.e('2D, DOM, ghostier');
+  console.log('in game');
   this.player = Crafty.e('Player').at(5, 5);
 });
-
-

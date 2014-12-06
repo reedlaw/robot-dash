@@ -1,23 +1,37 @@
 Game = {
   assets: {
     "sprites": {
-      "images/characters.png": {
-        "tile": 100,
-        "tileh": 100,
-        "map": { "spr_player": [0,0], "ghosty": [1,0], "ghostier": [2,0] },
+      "images/sprites.png": {
+        "tile": 16,
+        "tileh": 16,
+        "map": { "wall_tl": [0,0],
+                 "wall_bl": [0,1],
+                 "wall_bottom": [1,1],
+                 "wall_br": [2,1],
+                 "wall_top": [1,0],
+                 "wall_left": [0,2],
+                 "wall_right": [1,2],
+                 "empty": [2,2],
+                 "wall_tr": [2,0],
+                 "wall_tl_inner": [3,0],
+                 "wall_tr_inner": [4,0],
+                 "wall_bl_inner": [3,1],
+                 "wall_br_inner": [4,1],
+                 "spr_player": [5,0]
+               },
         "paddingX": 0,
         "paddingY": 0,
         "paddingAroundBorder": 0
       }
-    },    
+    },
   },
 
   map_grid: {
-    width: 24,
-    height: 16,
+    width: 28,
+    height: 36,
     tile: {
-      width: 24,
-      height: 24
+      width: 16,
+      height: 16
     }
   },
 

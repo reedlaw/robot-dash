@@ -20,7 +20,6 @@ gulp.task('bower', function() {
 gulp.task('scripts', function() {
   return gulp.src(paths.scripts)
     .pipe(changed('./js/'))
-    .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(gulp.dest('./js/'));
 });

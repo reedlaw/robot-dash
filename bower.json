@@ -2,7 +2,9 @@
   "name": "ld31",
   "version": "0.0.1",
   "dependencies": {
-    "crafty-component-progressbar": "git@github.com:mucaho/crafty-component-progressbar.git"
+    "crafty": "0.6.3",
+    "crafty-component-progressbar": "git@github.com:mucaho/crafty-component-progressbar.git",
+    "TiledMapBuilder": "git@github.com:Kibo/TiledMapBuilder.git"
   },
   "homepage": "https://github.com/reedlaw/ld31",
   "authors": [
