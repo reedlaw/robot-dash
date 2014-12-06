@@ -7,6 +7,9 @@ var uglify = require('gulp-uglify');
 var paths = {
   scripts: ['./lib/crafty/dist/crafty.js',
             './lib/crafty-component-progressbar/ProgressBar.js',
+            './lib/TiledMapBuilder/WebContent/modules/create_mocks_module.js',
+            './lib/TiledMapBuilder/WebContent/tiledmapbuilder.js',
+            './js/src/map.js',
             './js/src/components.js',
             './js/src/scenes.js',
             './js/src/main.js']

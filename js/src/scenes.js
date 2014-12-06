@@ -15,11 +15,9 @@ Crafty.scene('Loading', function () {
 
   Crafty.load(Game.assets,
               function() { // when loaded
-                console.log("loaded");
                 Crafty.scene('Game'); //go to main scene
               },
               function(e) { // on progress
-                console.log("progress");
                 Crafty.trigger("LOADING_PROGRESS", e.percent);
               },
               function(e) { // on error
@@ -29,6 +27,10 @@ Crafty.scene('Loading', function () {
 });
 
 Crafty.scene('Game', function() {
-  console.log('in game');
-  this.player = Crafty.e('Player').at(5, 5);
+  Crafty.e("2D, DOM, TiledMapBuilder").setMapDataSource( SOURCE_FROM_TILED_MAP_EDITOR )
+    .createWorld( function( map ){
+    })
+    .attr({z: 0});
+
+  Crafty.e('Player').at(13, 3).attr({z: 100});
 });

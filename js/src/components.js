@@ -26,7 +26,7 @@ Crafty.c('Player', {
   init: function() {
     this.requires('Actor, Fourway, Collision, spr_player')
       .fourway(2)
-      .stopOnSolids()
+      .stopOnSolids();
   },
 
   stopOnSolids: function() {
