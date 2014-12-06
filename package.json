@@ -1,0 +1,27 @@
+{
+  "name": "ld31",
+  "version": "0.0.1",
+  "description": "Ludum Dare 31 entry",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-bower": "^0.0.7",
+    "gulp-changed": "^1.0.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.0.2",
+    "merge-stream": "^0.1.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reedlaw/ld31.git"
+  },
+  "author": "Reed Law",
+  "license": "GPL Version 3",
+  "bugs": {
+    "url": "https://github.com/reedlaw/ld31/issues"
+  },
+  "homepage": "https://github.com/reedlaw/ld31"
+}
