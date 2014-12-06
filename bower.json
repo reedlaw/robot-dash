@@ -2,6 +2,22 @@
   "name": "ld31",
   "version": "0.0.1",
   "dependencies": {
-    "crafty": "0.6.3"
-  }
+    "crafty-component-progressbar": "git@github.com:mucaho/crafty-component-progressbar.git"
+  },
+  "homepage": "https://github.com/reedlaw/ld31",
+  "authors": [
+    "Reed Law <reed@lowly.me>"
+  ],
+  "description": "Ludum Dare 31",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "GPL Version 3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

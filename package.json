@@ -4,6 +4,8 @@
   "description": "Ludum Dare 31 entry",
   "main": "gulpfile.js",
   "dependencies": {
+  },
+  "devDependencies": {
     "gulp": "^3.8.10",
     "gulp-bower": "^0.0.7",
     "gulp-changed": "^1.0.0",
@@ -11,9 +13,9 @@
     "gulp-minify-css": "^0.3.11",
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^1.0.2",
-    "merge-stream": "^0.1.6"
+    "merge-stream": "^0.1.6",
+    "gulp-changed": "^1.0.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/reedlaw/ld31.git"
