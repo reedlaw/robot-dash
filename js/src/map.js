@@ -28,13 +28,13 @@ var SOURCE_FROM_TILED_MAP_EDITOR = { "height":32,
 
     },
  "renderorder":"right-down",
- "tileheight":80,
+ "tileheight":20,
  "tilesets":[
         {
          "firstgid":1,
          "image":"images/robot-dash.png",
-         "imageheight":480,
-         "imagewidth":400,
+         "imageheight":120,
+         "imagewidth":100,
          "margin":0,
          "name":"robot-dash",
          "properties":
@@ -42,10 +42,10 @@ var SOURCE_FROM_TILED_MAP_EDITOR = { "height":32,
 
             },
          "spacing":0,
-         "tileheight":80,
-         "tilewidth":80
+         "tileheight":20,
+         "tilewidth":20
         }],
- "tilewidth":80,
+ "tilewidth":20,
  "version":1,
  "width":29
 }
