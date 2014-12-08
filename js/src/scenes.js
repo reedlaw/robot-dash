@@ -29,6 +29,11 @@ Crafty.scene('Loading', function () {
 Crafty.scene('Game', function() {
   Crafty.e("2D, Canvas, TiledMapBuilder").setMapDataSource( SOURCE_FROM_TILED_MAP_EDITOR )
     .createWorld( function( map ){
+      for (var obstacle = 0; obstacle < map.getEntitiesInLayer('Walls').length; obstacle++){
+        map.getEntitiesInLayer('Walls')[obstacle]
+          .addComponent("Collision, Solid")
+          .collision( new Crafty.polygon([0,0],[20,0],[20,20]) );
+      };
     })
     .attr({z: 0});
 
