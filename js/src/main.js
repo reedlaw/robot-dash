@@ -27,11 +27,11 @@ Game = {
   },
 
   map_grid: {
-    width: 28,
-    height: 36,
+    width: 29,
+    height: 32,
     tile: {
-      width: 16,
-      height: 16
+      width: 80,
+      height: 80
     }
   },
 
