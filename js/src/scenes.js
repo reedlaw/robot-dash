@@ -27,10 +27,10 @@ Crafty.scene('Loading', function () {
 });
 
 Crafty.scene('Game', function() {
-  Crafty.e("2D, DOM, TiledMapBuilder").setMapDataSource( SOURCE_FROM_TILED_MAP_EDITOR )
+  Crafty.e("2D, Canvas, TiledMapBuilder").setMapDataSource( SOURCE_FROM_TILED_MAP_EDITOR )
     .createWorld( function( map ){
     })
     .attr({z: 0});
 
-  Crafty.e('Player').at(13, 3).attr({z: 100});
+  Crafty.e('Player').at(14, 24).attr({z: 1000});
 });
